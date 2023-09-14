@@ -25,6 +25,7 @@ public final class Constants {
 
   public static class Autos {
     public static final double FORWARD_TIME = 2;
-    public static final double TURN_TIME = 3.5;
+    public static final double TURN_TIME_180 = 3.5;
+    public static final double TURN_TIME_90 = TURN_TIME_180/2;
   }
 }

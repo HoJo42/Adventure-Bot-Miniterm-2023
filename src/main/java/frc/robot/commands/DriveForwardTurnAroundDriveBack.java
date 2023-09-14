@@ -19,7 +19,7 @@ public class DriveForwardTurnAroundDriveBack extends SequentialCommandGroup {
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
     addCommands(new ForwardThenStop(drive).withTimeout(Autos.FORWARD_TIME), 
-      new TurnCounterClockwise(drive).withTimeout(Autos.TURN_TIME), 
+      new TurnCounterClockwise(drive).withTimeout(Autos.TURN_TIME_180), 
       new ForwardThenStop(drive).withTimeout(Autos.FORWARD_TIME),
       new StopDrive(drive) 
       );

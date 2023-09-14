@@ -7,11 +7,11 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.Drive;
 
-public class Turn extends CommandBase {
+public class TurnCounterClockwise extends CommandBase {
 
   private final Drive m_Drive;
   /** Creates a new TurnAround. */
-  public Turn(Drive drive) {
+  public TurnCounterClockwise(Drive drive) {
     m_Drive = drive;
     addRequirements(drive);
   }

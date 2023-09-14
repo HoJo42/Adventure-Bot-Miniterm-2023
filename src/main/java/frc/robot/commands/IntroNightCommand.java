@@ -21,8 +21,7 @@ public class IntroNightCommand extends SequentialCommandGroup {
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
     addCommands(
-      new ForwardThenStop(m_Drive).withTimeout(3),
-      new Turn(m_Drive).withTimeout(Constants.Autos.TURN_TIME)
-    );
+        new StopDrive(m_Drive)
+      );
   }
 }
